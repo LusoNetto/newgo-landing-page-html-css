@@ -1,0 +1,51 @@
+:root{
+    font-family: 'Inter', sans-serif;
+}
+.body {
+    max-width: 81rem;
+}
+.cabecalho {
+    height: 6.25rem;
+    width: 100%;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 5.4rem;
+}
+.rotas {
+    margin-right: 2.25rem;
+}
+.rotas a {
+    font-size: 1.675rem;
+    margin: 2rem;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.0rem;
+    width: 100%;
+    background: #1E273E;
+}
+.rodape p {
+    color: white;
+}
+.redes-sociais {
+    margin-left: 8.3rem;
+    width: 26rem;
+    display: flex;
+    justify-content: space-between;
+}
+.endereco {
+    margin-right: 8.3rem;
+    font-weight: bold;
+    font-size: 1.675rem;
+}
