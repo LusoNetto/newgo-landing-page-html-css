@@ -1,9 +1,6 @@
 :root{
     font-family: 'Inter', sans-serif;
 }
-.body {
-    max-width: 81rem;
-}
 .cabecalho {
     height: 6.25rem;
     width: 100%;
@@ -48,4 +45,26 @@
     margin-right: 8.3rem;
     font-weight: bold;
     font-size: 1.675rem;
+}
+.corpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+}
+.conteudo-servico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.conteudo-servico img{
+    height: 40px;
+    width: 40px;
+    margin: 2rem;
 }
