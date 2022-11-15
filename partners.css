@@ -1,51 +1,112 @@
 :root{
     font-family: 'Inter', sans-serif;
+    margin:auto;
 }
-.body {
-    max-width: 81rem;
-}
+html, body { min-height: 100%; max-width: 100%; position:relative}
 .cabecalho {
     height: 6.25rem;
     width: 100%;
     border-bottom-style: solid;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-}
-.logo {
-    margin-left: 5.4rem;
+    position: fixed;
+    top: 0;
+    background: white;
 }
 .rotas {
-    margin-right: 2.25rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 .rotas a {
-    font-size: 1.675rem;
-    margin: 2rem;
+    font-size: 1.5rem;
     color: #000000;
     font-weight: bold;
     text-decoration: none;
 }
+
 .rodape {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 9.0rem;
+    height: 9rem;
     width: 100%;
     background: #1E273E;
+    position:fixed;
+    bottom: 0;
 }
 .rodape p {
     color: white;
 }
 .redes-sociais {
-    margin-left: 8.3rem;
-    width: 26rem;
+    width: 100%;
+    max-width: 26rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .endereco {
-    margin-right: 8.3rem;
     font-weight: bold;
-    font-size: 1.675rem;
+    font-size: 1rem;
+}
+.corpo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 9rem;
+    padding-top: 6.25rem;
+}
+.parceiros {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+}
+.parceiros a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #3274F0;
+    border-radius: 32px;
+    width: 12.5rem;
+    height: 7rem;
+}
+.titulo {
+    margin-top: 3rem;
+}
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 790px){
+    .box {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
+@media (max-width: 950px){
+    .cabecalho {
+        height: auto;
+        display: grid;
+        justify-items: center;
+        gap: 1rem
+    }
+    .parceiros {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, auto);
+        gap:2rem;
+    }
+}
+@media (max-height: 850px){
+    .cabecalho {
+        opacity: 0.2;
+    }
+    .rodape {
+        opacity: 0.2;
+        height: 5rem;
+    }
 }
