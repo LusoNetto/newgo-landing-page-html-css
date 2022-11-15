@@ -1,5 +1,6 @@
 :root{
     font-family: 'Inter', sans-serif;
+    margin:auto;
 }
 .cabecalho {
     height: 6.25rem;
@@ -31,6 +32,7 @@
     height: 9.0rem;
     width: 100%;
     background: #1E273E;
+
 }
 .rodape p {
     color: white;
@@ -47,24 +49,36 @@
     font-size: 1.675rem;
 }
 .corpo {
+    max-height: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
 }
+
 .box {
     display: flex;
     flex-direction: row;
+    margin: 3rem;
 }
 .conteudo-servico{
+    width: 20rem;
+    height: 8rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
 }
 .conteudo-servico img{
     height: 40px;
     width: 40px;
     margin: 2rem;
+    border-radius: 100%;
+    padding: 1rem;
+    border: 1px solid #3274F0;
+
 }
