@@ -88,3 +88,34 @@ html, body { min-height: 100%; max-width: 100%; position:relative}
 .titulo {
     margin-top: 3rem;
 }
+
+@media (max-width: 790px){
+    .box {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
+@media (max-width: 950px){
+    .cabecalho {
+        height: auto;
+        display: grid;
+        justify-items: center;
+        gap: 1rem
+    }
+    .rotas {
+        font-size: 1rem;
+    }
+    .box {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
+@media (max-height: 850px){
+    .cabecalho {
+        opacity: 0.2;
+    }
+    .rodape {
+        opacity: 0.2;
+        height: 5rem;
+    }
+}
