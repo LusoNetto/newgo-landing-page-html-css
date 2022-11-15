@@ -72,7 +72,7 @@ html, body { min-height: 100%; max-width: 100%; position:relative}
     align-items: center;
     justify-content: center;
     margin: 2rem;
-    border: 1px solid black;
+    border: 1px solid #3274F0;
     padding: 1rem;
     border-radius: 8px;
 }
@@ -82,7 +82,7 @@ html, body { min-height: 100%; max-width: 100%; position:relative}
     margin: 2rem;
     border-radius: 100%;
     padding: 1rem;
-    border: 1px solid #3274F0;
+    border: 2px solid #3274F0;
 
 }
 .titulo {
