@@ -2,65 +2,67 @@
     font-family: 'Inter', sans-serif;
     margin:auto;
 }
+html, body { min-height: 100%; max-width: 100%; position:relative}
 .cabecalho {
     height: 6.25rem;
     width: 100%;
     border-bottom-style: solid;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-}
-.logo {
-    margin-left: 5.4rem;
+    position: fixed;
+    top: 0;
+    background: white;
 }
 .rotas {
-    margin-right: 2.25rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 .rotas a {
-    font-size: 1.675rem;
-    margin: 2rem;
+    font-size: 1.5rem;
     color: #000000;
     font-weight: bold;
     text-decoration: none;
 }
+
 .rodape {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 9.0rem;
+    height: 9rem;
     width: 100%;
     background: #1E273E;
-
+    position:fixed;
+    bottom: 0;
 }
 .rodape p {
     color: white;
 }
 .redes-sociais {
-    margin-left: 8.3rem;
-    width: 26rem;
+    width: 100%;
+    max-width: 26rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .endereco {
-    margin-right: 8.3rem;
     font-weight: bold;
-    font-size: 1.675rem;
+    font-size: 1rem;
 }
 .corpo {
-    max-height: 100%;
-    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    padding-bottom: 9rem;
+    padding-top: 6.25rem;
 }
 
 .box {
     display: flex;
     flex-direction: row;
-    margin: 3rem;
+    margin-top: 2rem;
 }
 .conteudo-servico{
     width: 20rem;
@@ -72,6 +74,7 @@
     margin: 2rem;
     border: 1px solid black;
     padding: 1rem;
+    border-radius: 8px;
 }
 .conteudo-servico img{
     height: 40px;
@@ -81,4 +84,7 @@
     padding: 1rem;
     border: 1px solid #3274F0;
 
+}
+.titulo {
+    margin-top: 3rem;
 }
