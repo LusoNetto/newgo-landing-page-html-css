@@ -15,16 +15,26 @@ html, body { min-height: 100%; max-width: 100%; position:relative}
     top: 0;
     background: white;
 }
+
 .rotas {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
 }
+
 .rotas a {
     font-size: 1.5rem;
     color: #000000;
     font-weight: bold;
     text-decoration: none;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.rotas a:hover {
+    color: #3274F0;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .rodape {
@@ -62,24 +72,30 @@ html, body { min-height: 100%; max-width: 100%; position:relative}
 .box {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
     margin-top: 2rem;
 }
-.conteudo-servico{
+.conteudo-contato {
     width: 20rem;
-    height: 8rem;
+    height: 9rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 2rem;
     border: 1px solid #3274F0;
+    gap: 1rem;
     padding: 1rem;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
-.conteudo-servico img{
+.texto-conteudo a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.conteudo-contato img{
     height: 40px;
     width: 40px;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 100%;
     padding: 1rem;
     border: 2px solid #3274F0;
