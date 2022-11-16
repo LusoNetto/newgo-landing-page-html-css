@@ -20,11 +20,20 @@ html, body { min-height: 100%; max-width: 100%; position:relative}
     justify-content: space-around;
     gap: 1rem;
 }
+
 .rotas a {
     font-size: 1.5rem;
     color: #000000;
     font-weight: bold;
     text-decoration: none;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.rotas a:hover {
+    color: #3274F0;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .rodape {
